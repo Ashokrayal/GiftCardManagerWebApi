@@ -12,9 +12,9 @@ using GiftManagerWebApi;
 
 using System.Web.Http.Cors;
  
-[EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
 namespace GiftManagerWebApi.Controllers
 {
+    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
     public class PermissionsController : ApiController
     {
         private GiftManagerEntities db = new GiftManagerEntities();
