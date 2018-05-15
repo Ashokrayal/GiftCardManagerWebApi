@@ -6,6 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="e107068163a0441d9fbe81de9d3faf2a" Name="Diagram1">
         <EntityTypeShape EntityType="GiftManagerModel.Permission" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftManagerModel.UserPermission" Width="1.5" PointX="3" PointY="4.375" />
+        <AssociationConnector Association="GiftManagerModel.FK_UserPermissions_Permissions" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

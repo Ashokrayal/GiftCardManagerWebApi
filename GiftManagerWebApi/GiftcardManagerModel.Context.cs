@@ -26,5 +26,6 @@ namespace GiftManagerWebApi
         }
     
         public virtual DbSet<Permission> Permissions { get; set; }
+        public virtual DbSet<UserPermission> UserPermissions { get; set; }
     }
 }

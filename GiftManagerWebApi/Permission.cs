@@ -14,8 +14,17 @@ namespace GiftManagerWebApi
     
     public partial class Permission
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Permission()
+        {
+            this.UserPermissions = new HashSet<UserPermission>();
+        }
+    
         public int Id { get; set; }
         public string Permission1 { get; set; }
         public bool IsDeleted { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<UserPermission> UserPermissions { get; set; }
     }
 }
